@@ -1,0 +1,17 @@
+type Restaurant {
+    id: ID!,
+    title: String,
+    description: String,
+    address: String,
+    from: Float,
+    due: Float
+}
+type Query{
+    getRestaurants(count: Int):[Restaurant]
+    getRestaurantById(id: ID):Restaurant
+    getRestaurantByTitle(title: String):Restaurant
+    getRestaurantsByOpenCloseHours(from: Float, due: Float): [Restaurant]
+}
+type Mutation{
+    createRestaurant(title: String, description: String!, address: String, from: Float, due: Float):Restaurant
+}
