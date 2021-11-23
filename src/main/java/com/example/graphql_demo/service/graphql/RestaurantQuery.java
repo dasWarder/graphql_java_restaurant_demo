@@ -2,9 +2,8 @@ package com.example.graphql_demo.service.graphql;
 
 import com.coxautodev.graphql.tools.GraphQLQueryResolver;
 import com.example.graphql_demo.model.Restaurant;
-import com.example.graphql_demo.service.RestaurantService;
+import com.example.graphql_demo.service.restaurant.RestaurantService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.data.crossstore.ChangeSetPersister;
 import org.springframework.stereotype.Component;
 
 import java.util.List;

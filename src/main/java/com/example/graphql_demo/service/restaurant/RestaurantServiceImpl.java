@@ -1,4 +1,4 @@
-package com.example.graphql_demo.service;
+package com.example.graphql_demo.service.restaurant;
 
 import com.example.graphql_demo.model.Restaurant;
 import com.example.graphql_demo.repository.RestaurantRepository;

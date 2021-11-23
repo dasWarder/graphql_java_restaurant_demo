@@ -1,0 +1,15 @@
+type Dish {
+    id: ID!,
+    title: String,
+    description: String,
+    cost: Float
+}
+extend type Query {
+    getDishById(id: ID): Dish,
+    getDishes:[Dish],
+    getDishByTitle(title: String):Dish,
+    getDishesCheaperThanValue(value: Float):[Dish]
+}
+extend type Mutation {
+    createDish(title: String, description: String!, cost: Float): Dish
+}
